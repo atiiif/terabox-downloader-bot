@@ -50,10 +50,10 @@ Join @Publicfille For Updates
     check_if = await is_user_on_chat(bot, "@Publicfille", m.peer_id)
     if not check_if:
         return await m.reply("Please join @Publicfille then send me the link again.")
-    check_if = await is_user_on_chat(bot, "@Publicfille", m.peer_id)
+    check_if = await is_user_on_chat(bot, "@Inkalinks", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @Publicfille then send me the link again."
+            "Please join @Inkalinks then send me the link again."
         )
     await m.reply(reply_text, link_preview=False, parse_mode="markdown")
 
@@ -239,7 +239,7 @@ File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/terabox_freebot?start={uuid})
 
-@RoldexVerse
+@Publicfille
 """,
             supports_streaming=True,
             spoiler=True,
@@ -263,7 +263,7 @@ File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/terabox_freebot?start={uuid})
 
-@RoldexVerse
+@Publicfille
 """,
             progress_callback=progress_bar,
             thumb=thumbnail if thumbnail else None,
