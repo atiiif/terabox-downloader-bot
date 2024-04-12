@@ -237,7 +237,7 @@ async def handle_message(m: Message):
             caption=f"""
 File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
-Direct Link: [Click Here](https://t.me/teraboxdown_bot?start={uuid})
+Direct Link: [Click Here](https://t.me/terabox_freebot?start={uuid})
 
 @RoldexVerse
 """,
@@ -261,7 +261,7 @@ Direct Link: [Click Here](https://t.me/teraboxdown_bot?start={uuid})
             caption=f"""
 File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
-Direct Link: [Click Here](https://t.me/teraboxdown_bot?start={uuid})
+Direct Link: [Click Here](https://t.me/terabox_freebot?start={uuid})
 
 @RoldexVerse
 """,
