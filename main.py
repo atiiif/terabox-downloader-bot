@@ -6,7 +6,6 @@ from uuid import uuid4
 import redis
 import telethon
 import telethon.tl.types
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from telethon import TelegramClient, events
 from telethon.tl.functions.messages import ForwardMessagesRequest
 from telethon.types import Message, UpdateNewMessage
@@ -57,14 +56,6 @@ Join @Publicfille For Updates
             "Please join @Inkalinks then send me the link again."
         )
     await m.reply(reply_text, link_preview=False, parse_mode="markdown")
-reply_markup = InlineKeyboardMarkup(
-            [ [ InlineKeyboardButton(" Source code ", url = "https://t.me/+NeqCUg-QDxo2Nzll")],
-                [
-                    InlineKeyboardButton("Update Channel", url = "t.me/publicfille"),
-                    InlineKeyboardButton("👨‍💻 Devloper", url = "t.me/ifeelscam")
-                ]
-            ]
-)
 
 @bot.on(
     events.NewMessage(
