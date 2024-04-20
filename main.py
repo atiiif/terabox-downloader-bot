@@ -45,11 +45,10 @@ async def start(m: UpdateNewMessage):
     reply_text = f"""
 Hello! I am a bot to download videos from terabox.
 Send me the terabox link and I will start downloading it.
-Join @Publicfille For Updates
-[Source Code](https://t.me/+NeqCUg-QDxo2Nzll) """
+Join @Publicfille For Updates"""
     check_if = await is_user_on_chat(bot, "@Publicfille", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @Publicfille then send me the link again.")
+        return await m.reply("Please join @Publicfille & @Inkalinks then send me the link again.")
     check_if = await is_user_on_chat(bot, "@Inkalinks", m.peer_id)
     if not check_if:
         return await m.reply(
@@ -236,7 +235,7 @@ async def handle_message(m: Message):
             caption=f"""
 File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
-Direct Link: [Click Here](https://t.me/terabox_freebot?start={uuid})
+Direct Link: [Click Here](https://t.me/TeraboxVideosRobot?start={uuid})
 
 @Publicfille
 """,
@@ -260,7 +259,7 @@ Direct Link: [Click Here](https://t.me/terabox_freebot?start={uuid})
             caption=f"""
 File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
-Direct Link: [Click Here](https://t.me/terabox_freebot?start={uuid})
+Direct Link: [Click Here](https://t.me/TeraboxVideosRobot?start={uuid})
 
 @Publicfille
 """,
